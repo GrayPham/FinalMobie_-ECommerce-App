@@ -3,16 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/activity_home.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/activity_login.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/activity_on_boarding.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/activity_registration.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/category_list.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/fragment_home.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/new_products.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/sliding_kayout.xml" value="0.2296875" />
-        <entry key="..\:/Work_space/Mobile/ECApplication/app/src/main/res/layout/sliding_layout.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/activity_login.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/activity_main2.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/activity_on_boarding.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/category_list.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/fragment_home.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/new_products.xml" value="0.1" />
+        <entry key="..\:/Work_space/Final/app/src/main/res/layout/sliding_layout.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Mobile/FinalProject/app/src/main/res/layout/activity_home.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Mobile/FinalProject/app/src/main/res/layout/activity_login.xml" value="0.2296875" />
+        <entry key="..\:/Work_space/Mobile/FinalProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Work_space/Mobile/FinalProject/app/src/main/res/layout/activity_registration.xml" value="0.2296875" />
       </map>
     </option>
   </component>
