@@ -19,21 +19,23 @@ import hcmute.edu.vn.ecapplication.models.MyCartModel;
 
 public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder> {
 
-    Context context;
-    List<MyCartModel> list;
+    Context context; // contain data
+    List<MyCartModel> list; // get data from model
     int totalAmount = 0;
-
+    // Constructor
     public MyCartAdapter(Context context, List<MyCartModel> list){
         this.context = context;
         this.list = list;
     }
 
+    // handle user click event on an item in RecyclerView
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.my_cart_item,parent,false));
     }
 
+    // use this position parameter to bind data to view
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.date.setText(list.get(position).getCurrentDate());
@@ -51,6 +53,7 @@ public class MyCartAdapter extends RecyclerView.Adapter<MyCartAdapter.ViewHolder
         LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
     }
 
+    // Hard-assign the view so that it inflates the xml file
     @Override
     public int getItemCount() {
         return list.size();

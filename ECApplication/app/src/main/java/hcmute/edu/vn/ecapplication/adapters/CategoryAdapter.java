@@ -20,8 +20,8 @@ import hcmute.edu.vn.ecapplication.models.CategoryModel;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
-    private Context context;
-    private List<CategoryModel>list;
+    private Context context; // contain data
+    private List<CategoryModel>list; // get data from model
     public CategoryAdapter(Context context, List<CategoryModel> list){
         this.context = context;
         this.list = list;
@@ -34,6 +34,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.category_list,parent,false));
     }
 
+    // show data of product
     @Override
     public void onBindViewHolder(@NonNull CategoryAdapter.ViewHolder holder, int position) {
 
@@ -51,6 +52,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
 
     }
 
+    // get and show data of product
     @Override
     public int getItemCount() {
         return list.size();

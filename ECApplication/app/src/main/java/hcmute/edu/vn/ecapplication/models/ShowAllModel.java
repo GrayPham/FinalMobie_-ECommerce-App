@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class ShowAllModel implements Serializable {
 
+    // Declare the value variables of the product
     String description;
     String name;
     String rating;
@@ -14,6 +15,8 @@ public class ShowAllModel implements Serializable {
     public ShowAllModel() {
     }
 
+
+    // Getter and Setter
     public String getDescription() {
         return description;
     }

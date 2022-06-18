@@ -3,15 +3,19 @@ package hcmute.edu.vn.ecapplication.models;
 import java.io.Serializable;
 
 public class PopularProductsModel implements Serializable {
+
+    // Declare the value variables of the product
     String description;
     String name;
     String rating;
     int price;
     String img_url;
 
+    // data mapping of product
     public PopularProductsModel() {
     }
 
+    // Constructor
     public PopularProductsModel(String description, String name, String rating, int price, String img_url) {
         this.description = description;
         this.name = name;
@@ -20,6 +24,7 @@ public class PopularProductsModel implements Serializable {
         this.img_url = img_url;
     }
 
+    // Getter and Setter
     public String getDescription() {
         return description;
     }

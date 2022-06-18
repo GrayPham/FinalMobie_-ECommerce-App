@@ -18,12 +18,14 @@ import hcmute.edu.vn.ecapplication.models.AddressModel;
 
 public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHolder> {
 
+    // get information of user address
     Context context;
     List<AddressModel> addressModelList;
     SelectedAddress selectedAddress;
 
     private RadioButton selectedRadioBtn;
 
+    // get information form address list
     public AddressAdapter(Context context, List<AddressModel> addressModelList, SelectedAddress selectedAddress) {
         this.context = context;
         this.addressModelList = addressModelList;
@@ -37,6 +39,7 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHold
     }
 
 
+    // function choose address to order product
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
@@ -67,6 +70,7 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHold
         return addressModelList.size();
     }
 
+    // mapping data to layout address add
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView address;
@@ -79,6 +83,7 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHold
         }
     }
 
+    // show data
     public interface SelectedAddress {
         void setAddress(String address);
     }

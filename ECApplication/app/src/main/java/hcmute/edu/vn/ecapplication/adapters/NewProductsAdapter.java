@@ -20,20 +20,22 @@ import hcmute.edu.vn.ecapplication.models.NewProductsModel;
 
 public class NewProductsAdapter extends RecyclerView.Adapter<NewProductsAdapter.ViewHolder> {
 
-    private Context context;
-    private List<NewProductsModel> list;
+    private Context context; // contain data
+    private List<NewProductsModel> list; // get data from model
 
     public NewProductsAdapter(Context context, List<NewProductsModel>list) {
         this.context = context;
         this.list = list;
     }
 
+    // handle user click event on an item in RecyclerView
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.new_products,parent,false));
     }
 
+    // use this position parameter to bind data to view
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Glide.with(context).load(list.get(position).getImg_url()).into(holder.newImg);
@@ -50,6 +52,7 @@ public class NewProductsAdapter extends RecyclerView.Adapter<NewProductsAdapter.
         });
     }
 
+    // Hard-assign the view so that it inflates the xml file
     @Override
     public int getItemCount() {
         return list.size();

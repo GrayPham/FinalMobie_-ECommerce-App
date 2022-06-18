@@ -14,7 +14,7 @@ import hcmute.edu.vn.ecapplication.R;
 
 public class SliderAdapter extends PagerAdapter {
 
-    Context context;
+    Context context; // contain data
     public SliderAdapter(Context context){
         this.context = context;
     }
@@ -46,6 +46,7 @@ public class SliderAdapter extends PagerAdapter {
     }
 
 
+    // update data
     @NonNull
     @Override
     public Object instantiateItem (@NonNull ViewGroup container, int position){

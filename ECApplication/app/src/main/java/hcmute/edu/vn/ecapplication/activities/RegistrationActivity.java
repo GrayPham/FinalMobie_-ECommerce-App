@@ -118,7 +118,6 @@ public class RegistrationActivity extends AppCompatActivity {
             return view == (ConstraintLayout) object;
         }
 
-
         @NonNull
         @Override
         public Object instantiateItem (@NonNull ViewGroup container, int position){

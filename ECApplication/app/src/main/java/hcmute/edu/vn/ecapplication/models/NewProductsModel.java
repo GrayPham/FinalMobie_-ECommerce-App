@@ -3,12 +3,15 @@ package hcmute.edu.vn.ecapplication.models;
 import java.io.Serializable;
 
 public class NewProductsModel implements Serializable {
+
+    // Declare the value variables of the product
     String description;
     String name;
     String rating;
     int price;
     String img_url;
 
+    // Constructor
     public NewProductsModel() {
     }
     public NewProductsModel(String description, String name, String rating, int price, String img_url) {
@@ -19,6 +22,7 @@ public class NewProductsModel implements Serializable {
         this.img_url = img_url;
     }
 
+    // Getter and Setter
     public String getDescription() {
         return description;
     }

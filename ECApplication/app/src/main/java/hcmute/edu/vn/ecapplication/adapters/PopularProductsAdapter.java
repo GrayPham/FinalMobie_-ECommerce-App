@@ -24,20 +24,23 @@ import hcmute.edu.vn.ecapplication.models.PopularProductsModel;
 
 public class PopularProductsAdapter extends RecyclerView.Adapter<PopularProductsAdapter.ViewHolder> {
 
-    private Context context;
-    private List<PopularProductsModel> popularProductsModelList;
+    private Context context; // contain data
+    private List<PopularProductsModel> popularProductsModelList; // get data from model
 
+    // getter and setter
     public PopularProductsAdapter(Context context, List<PopularProductsModel> popularProductsModelList) {
         this.context = context;
         this.popularProductsModelList = popularProductsModelList;
     }
 
+    // handle user click event on an item in RecyclerView
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.popular_items,parent,false));
     }
 
+    // use this position parameter to bind data to view
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
@@ -56,6 +59,7 @@ public class PopularProductsAdapter extends RecyclerView.Adapter<PopularProducts
 
     }
 
+    // Hard-assign the view so that it inflates the xml file
     @Override
     public int getItemCount() {
         return popularProductsModelList.size();
