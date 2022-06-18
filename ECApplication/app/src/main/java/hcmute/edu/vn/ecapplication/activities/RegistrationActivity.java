@@ -31,13 +31,15 @@ public class RegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
-        getSupportActionBar().hide();
+
+        //getSupportActionBar().hide();
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null){
             startActivity(new Intent(RegistrationActivity.this,HomeActivity.class));
             finish();
         }
+
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);

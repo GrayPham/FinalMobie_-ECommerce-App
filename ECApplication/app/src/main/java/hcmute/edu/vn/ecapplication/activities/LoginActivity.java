@@ -24,11 +24,13 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //getSupportActionBar().hide();
         auth = FirebaseAuth.getInstance();
+
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
 
-        getSupportActionBar().hide();
     }
     public void Signin(View view) {
         String userEmail = email.getText().toString();
